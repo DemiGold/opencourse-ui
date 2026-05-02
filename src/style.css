@@ -1,0 +1,111 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* Custom animations */
+@keyframes fadeIn {
+  from { opacity: 0; }
+  to { opacity: 1; }
+}
+
+@keyframes slideInUp {
+  from {
+    transform: translateY(20px);
+    opacity: 0;
+  }
+  to {
+    transform: translateY(0);
+    opacity: 1;
+  }
+}
+
+@layer base {
+  html {
+    @apply scroll-smooth;
+  }
+  
+  body {
+    @apply bg-neutral-50 dark:bg-neutral-900 text-neutral-800 dark:text-neutral-200 font-sans;
+    line-height: 1.5;
+  }
+  
+  h1, h2, h3, h4, h5, h6 {
+    @apply font-semibold;
+    line-height: 1.2;
+  }
+  
+  h1 {
+    @apply text-3xl md:text-4xl;
+  }
+  
+  h2 {
+    @apply text-2xl md:text-3xl;
+  }
+  
+  h3 {
+    @apply text-xl md:text-2xl;
+  }
+}
+
+@layer components {
+  .btn {
+    @apply px-4 py-2 rounded-md transition-all duration-200 font-medium;
+  }
+  
+  .btn-primary {
+    @apply bg-gold-300 text-blue-900 hover:bg-gold-400 dark:hover:bg-gold-200;
+  }
+  
+  .btn-secondary {
+    @apply bg-white dark:bg-neutral-800 border border-gold-300 text-blue-900 dark:text-gold-300 hover:border-gold-400 dark:hover:border-gold-200;
+  }
+  
+  .btn-success {
+    @apply bg-green-500 text-white hover:bg-green-600 dark:hover:bg-green-400;
+  }
+  
+  .btn-danger {
+    @apply bg-error text-white hover:bg-red-600 dark:hover:bg-red-500;
+  }
+  
+  .card {
+    @apply bg-white dark:bg-neutral-800 rounded-lg shadow-md overflow-hidden animate-fadeIn;
+  }
+  
+  .form-input {
+    @apply w-full px-3 py-2 border border-neutral-300 dark:border-neutral-600 rounded-md focus:outline-none focus:ring-2 focus:ring-gold-300 focus:border-transparent dark:bg-neutral-700 dark:text-white;
+  }
+  
+  .form-label {
+    @apply block text-sm font-medium text-neutral-700 dark:text-neutral-300 mb-1;
+  }
+  
+  .form-error {
+    @apply text-sm text-error mt-1;
+  }
+  
+  .nav-link {
+    @apply text-white hover:text-gold-300 transition-colors;
+  }
+  
+  .nav-link.active {
+    @apply text-green-500;
+  }
+  
+  .progress-bar {
+    @apply bg-neutral-200 dark:bg-neutral-700 rounded-full h-2 overflow-hidden;
+  }
+  
+  .progress-bar-fill {
+    @apply bg-green-500 h-full rounded-full transition-all duration-300;
+  }
+}
+
+/* Animation classes */
+.animate-fadeIn {
+  animation: fadeIn 0.5s ease-in-out;
+}
+
+.animate-slideInUp {
+  animation: slideInUp 0.5s ease-out;
+}
