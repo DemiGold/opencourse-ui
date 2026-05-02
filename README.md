@@ -4,9 +4,9 @@
 🔴 **[Live Demo](https://sensational-biscotti-3fafdd.netlify.app/)**
 
 ## 🚀 Overview
-OpenCourse UI is a frontend mock-up for a modern Learning Management System (LMS). I built this project to demonstrate deep DOM manipulation, state management, and routing without relying on heavy frameworks. 
 
-*(Video Demo Here)*
+OpenCourse UI is a frontend mock-up for a modern Learning Management System (LMS). I built this project to demonstrate deep DOM manipulation, 
+state management, and routing without relying on heavy frameworks. 
 
 ## ✨ Key Features
 *   **Custom Vanilla JS Router:** A fully functional Single Page Application (SPA) routing system built from scratch, handling protected routes and browser history.
