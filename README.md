@@ -20,6 +20,6 @@ state management, and routing without relying on heavy frameworks.
 *   **Logic:** Vanilla JavaScript (ES6+)
 
 ## 💻 Running Locally
-1. Clone the repository: \`git clone https://github.com/DemiGold/opencourse-ui.git\`
+1. Clone the repository: \`git clone https://github.com/DemiGold/opencourse-ui.git/
 2. Install dependencies: \`npm install\`
 3. Start the dev server: \`npm run dev\`
