@@ -1,7 +1,7 @@
 # OpenCourse UI 🎓 
 **A responsive, lightning-fast E-Learning Dashboard built with Vite and Vanilla JavaScript.**
 
-🔴 **[Live Demo](https://sensational-biscotti-3fafdd.netlify.app/)**
+🔴 **[Live Demo](https://https://opencourse-ui.netlify.app/)**
 
 ## 🚀 Overview
 
